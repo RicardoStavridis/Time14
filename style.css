@@ -1,0 +1,194 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(167, 211, 240, 0.2); 
+  color: #333;
+}
+
+/* Estilo Geral do Menu */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Ajuste o espaçamento conforme necessário */
+    background-color: #fff; /* Cor do fundo do menu */
+    border-bottom: 1px solid #ddd; /* Linha inferior opcional */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o logo e o texto */
+}
+
+header .logo img {
+    height: 50px; /* Altura do logo */
+}
+
+header nav {
+    flex-grow: 1; /* O menu ocupa o restante do espaço */
+    text-align: right; /* Alinha os itens à direita */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Ajusta alinhamento para a direita */
+    gap: 15px; /* Espaçamento entre os itens */
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    color: #1e3c72; /* Azul do tema */
+}
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  padding: 50px 30px;
+  background-color: #E5F3FC;
+}
+
+.main-content .text {
+  flex: 1;
+  font-size: 1.2em;
+}
+
+.carousel {
+  flex: 1;
+  background-color: #b3daff;
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #4BA3C3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+
+.ongs-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.instituicao {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.instituicao .logo img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.instituicao .info h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.instituicao .info p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.instituicao .info a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.instituicao .info a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+.carousel {
+  flex: 1; /* Para ajustar o espaço em layouts flex */
+  background-color: #E5F3FC; /* Uma cor clara para diferenciar */
+  width: 100%; /* Ocupa toda a largura disponível */
+  height: 300px; /* Altura fixa do carrossel */
+  border-radius: 8px; /* Borda arredondada */
+  display: flex; /* Alinhamento central */
+  align-items: center; /* Alinha conteúdo verticalmente */
+  justify-content: center; /* Alinha conteúdo horizontalmente */
+  color: #555; /* Cor do texto temporário */
+  font-size: 1.2rem; /* Tamanho do texto temporário */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doe e Faça Parte Dessa Rede de Esperança</title>
+    <link rel="stylesheet" href="{% static 'unicasa/css/doacoes.css' %}">
+    <link rel="stylesheet" href="{% static 'unicasa/css/style.css' %}">
+</head>
+<body>
+    <div class="background">
+        <header>
+            <div class="logo">
+                <img src="{% static 'unicasa/img/logo.png' %}" alt="UniCasa Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index' %}">Início</a></li>
+                    <li><a href="{% url 'doacoes' %}">Doações</a></li>
+                    <li><a href="{% url 'padrinhos' %}">Apadrinhar</a></li>
+                    <li><a href="{% url 'orfanatos' %}">Orfanatos</a></li>
+                    <li><a href="{% url 'ongs' %}">ONGs</a></li>
+                    <li><a href="{% url 'faleconosco' %}">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="banner">
+                <div class="container">
+                    <h1>Doe e faça parte dessa rede de esperança!</h1>
+                    <p>Com sua contribuição, você ajuda a espalhar amor e solidariedade.</p>
+                    <a href="#formulario" class="btn-doar">Doe Agora</a>
+                </div>
+            </section>
+
+            <section id="sugestoes" class="sugestoes">
+                <div class="container">
+                    <h2>Não sabe o que doar?</h2>
+                    <p>Confira algumas sugestões de itens que você pode contribuir:</p>
+                    
+                    <div class="categorias">
+                        <div class="categoria">
+                            <h3>Alimentos</h3>
+                            <ul>
+                                <li>Arroz</li>
+                                <li>Feijão</li>
+                                <li>Macarrão</li>
+                                <li>Farinha de trigo</li>
+                                <li>Farinha de mandioca ou fubá</li>
+                                <li>Açúcar</li>
+                                <li>Café</li>
+                                <li>Óleo de cozinha</li>
+                                <li>Sal</li>
+                                <li>Leite em pó ou leite UHT (longa vida)</li>
+                                <li>Extrato de tomate</li>
+                                <li>Biscoito (pacote de bolacha água e sal ou maisena)</li>
+                                <li>Enlatados</li>
+                                <li>Achocolatado</li>
+                            </ul>
+                        </div>
+
+                        <div class="categoria">
+                            <h3>Educação e Materiais Didáticos</h3>
+                            <ul>
+                                <li>Livros</li>
+                                <li>Materiais escolares</li>
+                            </ul>
+                        </div>
+
+                        <div class="categoria">
+                            <h3>Roupas e Calçados</h3>
+                            <ul>
+                                <li>Roupas em bom estado</li>
+                                <li>Calçados</li>
+                            </ul>
+                        </div>
+
+                        <div class="categoria">
+                            <h3>Atividades Recreativas</h3>
+                            <ul>
+                                <li>Jogos</li>
+                                <li>Brinquedos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="vaquinha" class="vaquinha">
+                <div class="container">
+                    <h2>Ajude com Nossas Despesas Mensais</h2>
+                    <p>Vaquinha de contribuição para manter essa corrente de apoio:</p>
+                    <div class="pix-info">
+                        <p><strong>PIX:</strong> chave: celular <br> (21) 99999-9999</p>
+                    </div>
+                    <p>Transforme seu apoio em um compromisso contínuo! Seja um doador mensal e ajude a garantir um futuro melhor todos os dias.</p>
+                    <a href="#formulario" class="btn-doar-mensal">Seja um Doador Mensal</a>
+                </div>
+            </section>
+
+            <section id="distribuicao" class="distribuicao">
+                <div class="container">
+                    <h2>Dúvidas de para onde vai o seu dinheiro? Veja nossa distribuição:</h2>
+                    <p>Transparência é essencial. Confira como estamos utilizando as doações para garantir que cada centavo seja usado da melhor forma possível.</p>
+                    
+                    <div class="distribuicao-categorias">
+                        <div class="categoria-distribuicao">
+                            <h3>1. Custos Operacionais</h3>
+                            <p>Manutenção das operações e serviços essenciais, como transporte e logística.</p>
+                        </div>
+                        <div class="categoria-distribuicao">
+                            <h3>2. Aquisição de Itens</h3>
+                            <p>Compra de alimentos, roupas e materiais para as comunidades atendidas.</p>
+                        </div>
+                        <div class="categoria-distribuicao">
+                            <h3>3. Programas de Educação e Capacitação</h3>
+                            <p>Investimos em cursos e programas de capacitação para jovens e adultos.</p>
+                        </div>
+                        <div class="categoria-distribuicao">
+                            <h3>4. Despesas com Saúde</h3>
+                            <p>Apoio com medicamentos e assistência médica básica para quem mais precisa.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="formulario" class="formulario-doacao">
+                <div class="container">
+                    <h2>Faça Sua Doação</h2>
+                    <form action="#" method="post">
+                        <label for="nome">Seu Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="valor">Valor da Doação (R$):</label>
+                        <input type="number" id="valor" name="valor" required>
+
+                        <label for="email">Seu E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <button type="submit">Doar Agora</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Rede de Esperança. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniCasa - Transforme Vidas com Amor</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'unicasa/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'unicasa/img/logo.png' %}" alt="UniCasa Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Início</a></li>
+                <li><a href="{% url 'doacoes' %}">Doações</a></li>
+                <li><a href="{% url 'padrinhos' %}">Apadrinhar</a></li>
+                <li><a href="{% url 'orfanatos' %}">Orfanatos</a></li>
+                <li><a href="{% url 'ongs' %}">ONGs</a></li>
+                <li><a href="{% url 'faleconosco' %}">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h2>TRANSFORME VIDAS COM AMOR</h2>
+            <p>Venha fazer parte do time de pais e padrinhos da UniCasa</p>
+            <img src="{% static 'unicasa/img/banner.jpeg' %}" alt="Imagem de crianças felizes">
+        </section>
+
+        <section class="historias">
+            <h3>HISTÓRIAS DE AMOR E TRANSFORMAÇÃO</h3>
+            <div class="historias-container">
+                <div class="historia">
+                    <div class = "logo img">                   
+                        <img src="{% static 'unicasa/img/luan.jpeg' %}" alt="Imagem do Romeo">
+                    </div>
+                    <p>Venha ver a história de Luan, um garoto de 4 anos que foi adotado por um casal de pais, diretamente pela nossa plataforma, em contato com a Obra do Berço.</p>
+                </div>
+                <div class="historia">
+                    <div class = "logo img">
+                    <img src="{% static 'unicasa/img/luana-e-cecilia.jpeg' %}" alt="Imagem de Luana e Cecilia">
+                    </div>
+                    <p>Venha ver a história da Luana e sua filha Cecília, que foi adotada aos 10 anos, depois de ter sido rejeitada 3 vezes por famílias diferentes. Uma linda história de amor que a UniCasa pode proporcionar a essa duplinha!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <a href="#" class="button">Clique aqui para ser um padrinho UNICASA</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 UniCasa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto UniCasa - Instituições</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'unicasa/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'unicasa/img/logo.png' %}" alt="UniCasa Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Início</a></li>
+                <li><a href="{% url 'doacoes' %}">Doações</a></li>
+                <li><a href="{% url 'padrinhos' %}">Apadrinhar</a></li>
+                <li><a href="{% url 'orfanatos' %}">Orfanatos</a></li>
+                <li><a href="{% url 'ongs' %}">ONGs</a></li>
+                <li><a href="{% url 'faleconosco' %}">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="grid">
+        <div class = "instituicao">
+            <div class="logo">
+                <img src="{% static 'unicasa/img/obradoberco.jpeg' %}" alt="Logo Obra do Berço">
+                <div class="info">
+                    <h2>Obra do Berço</h2>
+                    <p><strong>Fundação:</strong> 1947</p>
+                    <p><strong>Descrição:</strong> A Obra do Berço acolhe cerca de 150 crianças.</p>
+                    <p><strong>Slogan:</strong> "Protegendo e Educando para um Futuro Melhor"</p>
+                    <p><strong>Link:</strong> <a href="https://aobradobercorj.org.br/?gad_source">Obra do Berço</a></p>
+                </div>
+            </div>
+        </div>
+        <div class = "instituicao">
+            <div class="logo">
+                <img src="{% static 'unicasa/img/cazuza.jpeg' %}" alt="Logo Viva Cazuza">
+                <div class="info">
+                    <h2>Viva Cazuza</h2>
+                    <p><strong>Fundação:</strong> 1994</p>
+                    <p><strong>Descrição:</strong> O Viva Cazuza no Rio de Janeiro acolhe aproximadamente 100 crianças e adolescentes.</p>
+                    <p><strong>Slogan:</strong> "Cuidar, Educar e Transformar"</p>
+                    <p><strong>Link:</strong> <a href="https://www.facebook.com/vivacazuza/?locale=pt_BR">Viva Cazuza</a></p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class = "instituicao">
+            <div class="logo">
+                <img src="{% static 'unicasa/img/orfanato_rita.jpeg' %}" alt="Logo Rito de Amor">
+                <div class="info">
+                    <h2>Rita de Cássia</h2>
+                    <p><strong>Fundação:</strong> 1985</p>
+                    <p><strong>Descrição:</strong> O Santa Rita de Cássia oferece abrigo a cerca de 60 crianças.</p>
+                    <p><strong>Slogan:</strong> "Um lar para quem precisa de amor e cuidado"</p>
+                    <p><strong>Link:</strong> <a href="https://orfanatosantaritadecassia.com.br/quem-somos/?gad_source=1&gclid=Cj0KCQiAire5BhCNARIsAM53K1hz7BDWSE18MOHM5gYIA4ZkTaPVRtInN3e3JCR6bVTY2ZbDaF9THw8aAk8uEALw_wcB">Orfanato Santa Rita de Cássia</a></p>
+                </div>
+            </div>
+        </div>
+        <div class = "instituicao">
+            <div class="logo">
+                <img src="{% static 'unicasa/img/institutodacrianca.jpeg' %}" alt=Logo Instituto da Criança">
+                <div class="info">
+                    <h2>Instituto da Criança</h2>
+                    <p><strong>Fundação:</strong> 1986</p>
+                    <p><strong>Descrição:</strong> O Instituto da Criança, localizado em Botafogo, Rio de Janeiro, atende cerca de 120 crianças e adolescentes.</p>
+                    <p><strong>Slogan:</strong> "Transformando Vidas com Amor e Educação"</p>
+                    <p><strong>Link:</strong> <a href="https://www.institutodacrianca.org.br/">Instituto da Criança </a></p>
+                </div>
+
+            </div>
+        </div>
+        <div class = "instituicao">
+            <div class="logo">
+                <img src="{% static 'unicasa/img/saudecrianca.jpeg' %}" alt="Logo Saúde Criança">
+                <div class="info">
+                    <h2>Saúde Criança</h2>
+                    <p><strong>Fundação:</strong> 1991</p>
+                    <p><strong>Descrição:</strong> O Saúde Criança atende cerca de 300 crianças e adolescentes, com foco na promoção da saúde e bem-estar integral das crianças e suas famílias.</p>
+                    <p><strong>Slogan:</strong> "Cuidar para Transformar"</p>
+                    <p><strong>Link:</strong> <a href="https://www.criancaresponder.org.br/saude-crianca">Saúde Criança </a></p>
+                </div>
+
+            </div>
+        </div>
+        <div class = "instituicao">
+            <div class="logo">
+                <img src="{% static 'unicasa/img/logo_indef.jpeg' %}" alt="Logo Lar de Narcisa">
+                <div class="info">
+                    <h2>Lar de Narcisa</h2>
+                    <p><strong>Fundação:</strong> 1952</p>
+                    <p><strong>Descrição:</strong> O Lar de Narcisa acolhe cerca de 70 crianças.</p>
+                    <p><strong>Slogan:</strong> 
+                    <p><strong>Link:</strong> <a href="https://www.instagram.com/explore/locations/1021873376/lar-de-narcisa/">Lar de Narcisa </a></p></p>
+                </div>
+
+            </div>
+        </div>
+        </section>
+    </main>
+</body>
+</html>

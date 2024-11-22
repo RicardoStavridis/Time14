@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      {% load static %}
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>UniCasa - Conectando Corações</title>
+      <link rel="stylesheet" href="{% static 'unicasa/css/style.css' %}">
+
+    </head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'unicasa/img/logo.png' %}" alt="UniCasa Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Início</a></li>
+                <li><a href="{% url 'doacoes' %}">Doações</a></li>
+                <li><a href="{% url 'padrinhos' %}">Apadrinhar</a></li>
+                <li><a href="{% url 'orfanatos' %}">Orfanatos</a></li>
+                <li><a href="{% url 'ongs' %}">ONGs</a></li>
+                <li><a href="{% url 'faleconosco' %}">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-content">
+            <div class="text">
+            <center>    
+            <h1>ONG's Parceiras</h1>
+            </center>
+                <div class="ongs-list">
+                    <div class="instituicao">
+                        <img src="{% static 'unicasa/img/fzndhst.png' %}" alt="Instituto Fazendo História">
+                        <p><a href="https://www.fazendohistoria.org.br">https://www.fazendohistoria.org.br</a></p>
+                    </div>
+                    <div class="instituicao">
+                        <img src="{% static 'unicasa/img/redeabrigo.png' %}" alt="Rede Abrigo">
+                        <p><a href="https://www.redeabrigo.org">https://www.redeabrigo.org</a></p>
+                    </div>
+                    <div class="instituicao">
+                        <img src="{% static 'unicasa/img/logo_childfundbrasil.png' %}" alt="ChildFund Brasil">
+                        <p><a href="https://www.childfundbrasil.org.br">https://www.childfundbrasil.org.br</a></p>
+                    </div>
+                    <div class="instituicao">
+                        <img src="{% static 'unicasa/img/visaomundo.png' %}" alt="Visão Mundial">
+                        <p><a href="https://www.visaomundial.org">https://www.visaomundial.org</a></p>
+                    </div>
+                    <div class="instituicao">
+                        <img src="{% static 'unicasa/img/fabiano.jpeg' %}" alt="Lar Fabiano de Cristo">
+                        <p><a href="https://www.larfabianodecristo.org.br">https://www.larfabianodecristo.org.br</a></p>
+                    </div>
+                    <div class="instituicao">
+                        <img src="{% static 'unicasa/img/fabrinq.png' %}" alt="Fundação Abrinq">
+                        <p><a href="https://www.fadc.org.br">https://www.fadc.org.br</a></p>
+                    </div>
+                </div>
+
+        </section>
+    </main>
+    <div class="text">
+        <center>
+            <h1>Conectando corações, transformando vidas!</h1>
+            <p>A instituição que quizer entrar em contato e fazer parte, identifique-se no fale conosco</p>
+        </center>]
+    </div>
+    </div>
+</body>
+</html>

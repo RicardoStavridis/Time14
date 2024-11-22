@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre-se</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'unicasa/css/auth.css' %}">
+</head>
+<body>
+    <a href="{% url 'index' %}" class="back-button">Voltar para o Início</a>
+    <div class="container">
+        <h1>Registre-se!</h1>
+        <form method="post">
+            {% csrf_token %}
+            <label for="username">Nome do usuário:</label>
+            <input id="username" name="username" type="text" placeholder="Digite seu nome">
+            <p class="help-text">150 caracteres ou menos. Letras, números, ou @/./+/-/_.</p>
+
+            <label for="email">Seu email:</label>
+            <input id="email" name="email" type="email" placeholder="Endereço de email">
+
+            <label for="password">Senha:</label>
+            <input id="password" name="password" type="password" placeholder="Escolha sua senha">
+
+            <label for="password-confirm">Confirme sua senha:</label>
+            <input id="password-confirm" name="password-confirm" type="password" placeholder="Confirme sua senha">
+
+            <button type="submit">Registrar</button>
+        </form>
+        <p>Já possui uma conta? <a href="{% url 'login' %}">Faça login aqui</a>.</p>
+    </div>
+</body>
+</html>

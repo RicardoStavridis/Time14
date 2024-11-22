@@ -1,0 +1,43 @@
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniCasa - Conectando Corações</title>
+  <link rel="stylesheet" href="{% static 'unicasa/css/style.css' %}">
+
+</head>
+  <body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'unicasa/img/logo.png' %}" alt="UniCasa Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Início</a></li>
+                <li><a href="{% url 'doacoes' %}">Doações</a></li>
+                <li><a href="{% url 'padrinhos' %}">Apadrinhar</a></li>
+                <li><a href="{% url 'orfanatos' %}">Orfanatos</a></li>
+                <li><a href="{% url 'ongs' %}">ONGs</a></li>
+                <li><a href="{% url 'faleconosco' %}">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <section class="main-content">
+        <div class="text">
+          <h1>Conectando corações, transformando vidas!</h1>
+          <p>Uma maneira fácil de se conectar com instituições, conhecer suas necessidades e descobrir como ajudar. Seja para doar, agendar uma visita ou se voluntariar, nosso objetivo é aproximar você daqueles que precisam. Juntos, vamos criar um impacto positivo na vida das crianças e adolescentes em busca de apoio e acolhimento.</p>
+          <a href="{% url 'register' %}" class="cta-button">Faça parte!</a>
+        <div class="carousel">
+          <!-- Espaço reservado para o carrossel -->
+          <p>Imagens do carrossel vão aqui</p>
+        </div>
+      </section>
+    </main>
+  </body>
+
+
+</html>

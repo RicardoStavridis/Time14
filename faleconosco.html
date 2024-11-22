@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      {% load static %}
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>UniCasa - Conectando Corações</title>
+      <link rel="stylesheet" href="{% static 'unicasa/css/style.css' %}">
+
+    </head>
+    
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'unicasa/img/logo.png' %}" alt="UniCasa Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Início</a></li>
+                <li><a href="{% url 'doacoes' %}">Doações</a></li>
+                <li><a href="{% url 'padrinhos' %}">Apadrinhar</a></li>
+                <li><a href="{% url 'orfanatos' %}">Orfanatos</a></li>
+                <li><a href="{% url 'ongs' %}">ONGs</a></li>
+                <li><a href="{% url 'faleconosco' %}">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-content">
+                <div class="text">
+            <h2>Fale Conosco</h2>
+            <p>Quem somos:</p>
+            <p>Somos Alunos do segundo período de engenharia da PUC Rio, criamos esse projeto com a intenção de promover e facilitar o contato das pessoas com abrigos e crianças necessitadas.</p>
+            <div class="carousel">
+                <p>Fotos dos integrantes</p>
+                <!-- Adicione imagens aqui -->
+            </div>
+            <p>Email: emaildecontato@email.com</p>
+        </section>
+        <footer>
+            <section class="main-content">
+                <div class="text">
+            <h1>Conectando corações, transformando vidas!</h1>
+            <p>A instituição que quizer entrar em contato e fazer parte, identifique-se pelo email</p>
+                </div>
+        </footer>
+    </main>
+</body>
+</html>
